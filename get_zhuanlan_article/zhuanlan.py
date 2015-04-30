@@ -69,9 +69,10 @@ def zhuanlan_article():
                 print next_page_json[i_json]['title']
                 page_title=next_page_json[i_json]['title']
                 print Zhuanlan_Url+next_page_json[i_json]['url']
+                zhuanlan_url=Zhuanlan_Url+next_page_json[i_json]['url']
                 href_url =  Zhuanlan_Url+next_page_json[i_json]['href']
                 f=open('article_dir/%s' %page_title,'w')
-                f.write(content(href_url))
+                f.write('%s \n %s' %(zhuanlan_url,content(href_url)))
                 f.close()
                 content(href_url)
         else:
