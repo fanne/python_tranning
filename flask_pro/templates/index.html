@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Index{% endblock %}
+{% block page_content %}
+<div class="page-header">
+
+    <h1>
+        Update version_mt_server:
+        {% if version_mt_server_192 %}
+        {{ version_mt_server_192 }}
+        {% else %}
+        Strange
+        {% endif %}
+    </h1>
+    <h1>
+        Update version_mt_resource:
+        {% if version_mt_resource_192 %}
+        {{ version_mt_resource_192 }}
+        {% else %}
+        Strange
+        {% endif %}
+    </h1>
+</div>
+{{ wtf.quick_form(form)}}
+{% endblock %}
+
+
