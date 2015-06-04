@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Index{% endblock %}
+{% block page_content %}
+<div class="page-header">
+
+    <h1>
+        Update version_mt_server:
+        {% if version_mt_server_192 %}
+        {{ version_mt_server_192 }}
+        {% else %}
+        Strange
+        {% endif %}
+    </h1>
+    <h1>
+        Update version_mt_resource:
+        {% if version_mt_resource_192 %}
+        {{ version_mt_resource_192 }}
+        {% else %}
+        Strange
+        {% endif %}
+    </h1>
+</div>
+
+<form action="#" method="POST">
+            {{ form.version_mt_server_192 }}
+            {{ form.version_mt_resource_192 }}
+            {{ form.submit }}
+        </form>
+
+<!--<form method="post" action="#">-->
+  <!--<div class="form-group">-->
+    <!--<label for="exampleInputEmail1">{{form.version_mt_server_192}}</label>-->
+    <!--<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">-->
+  <!--</div>-->
+  <!--<div class="form-group">-->
+    <!--<label for="exampleInputPassword1">{{form.version_mt_resource_192}}</label>-->
+    <!--<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">-->
+  <!--</div>-->
+  <!--<button type="submit" class="btn btn-default">{{form.submit}}</button>-->
+<!--</form>-->
+{% endblock %}
