@@ -1,5 +1,5 @@
 #coding:utf-8
-__author__ = 'JYC103'
+__author__ = 'eyu Fanne'
 
 import requests,re,json,html2text,sys,time
 from bs4 import BeautifulSoup

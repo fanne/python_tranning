@@ -1,4 +1,4 @@
-__author__ = 'JYC103'
+__author__ = 'eyu Fanne'
 #coding:utf-8
 import requests,sys,configparser,json,html2text
 from bs4 import BeautifulSoup

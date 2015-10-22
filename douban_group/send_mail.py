@@ -1,5 +1,5 @@
 #coding:utf-8
-__author__ = 'JYC103'
+__author__ = 'eyu Fanne'
 import smtplib,os
 from email.mime.text import MIMEText
 from email.header import Header
