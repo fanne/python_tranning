@@ -8,7 +8,7 @@ from douban_zufang import get_tiezi
 HOST = 'smtp.163.com'
 FROM = os.environ.get('MAIL_USERNAME')
 PASSWD = os.environ.get('MAIL_PASSWORD')
-SUBJECT = Header('python mail test',charset='utf-8')
+SUBJECT = Header('爬取豆瓣租房小组信息',charset='utf-8')
 TO = 'juanmao_love@126.com'
 
 def makemail(tiezi):

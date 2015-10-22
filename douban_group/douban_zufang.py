@@ -16,7 +16,7 @@ nowtiem = time.strftime('%m-%d %H:%M',time.localtime(time.time()))
 def get_tiezi():
     get_url = requests.get(url)
     print get_url.status_code
-    soup = BeautifulSoup(get_url.text)
+    soup = BeautifulSoup(get_url.text,'lxml')
     soup_olt = soup.find_all("table",class_="olt")
     soup_tr = soup.find_all("tr",class_="")
     a_list = soup.find_all('a')
